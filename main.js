@@ -8,7 +8,7 @@ class Animal {
     }
 
     info() {
-        console.log(this.name + " это " + this.type + " и он " + this.color " цвета " + ".");
+        console.log(this.name + " это " + this.type + " и он " + this.color + " цвета" + ".");
     }
 }
 
@@ -35,7 +35,7 @@ class Duck extends Animal {
     }
 
     getDuck() {
-        console.log("Он" + this.poroda);
+        console.log("Он" + this.pol);
     }
 }
 
