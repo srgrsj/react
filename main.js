@@ -1,6 +1,6 @@
 
 class Animal {
-    constructor(type = "", name = "", color = "", poroda = "", pol  = "", food  = "") {
+    constructor(name = "", type = "", color = "") {
         this.name = name;
         this.color = color;
         this.type = type;
@@ -8,13 +8,13 @@ class Animal {
     }
 
     info() {
-        console.log(this.name + " это " + this.type + " и он " + this.color " цвета " );
+        console.log(this.name + " это " + this.type + " и он " + this.color " цвета " + ".");
     }
 }
 
 class Dog extends Animal {
     constructor(name, type, color, poroda = "") {
-        super(name, type, color, poroda)
+        super(name, type, color)
         this.poroda = poroda;
     }
 
@@ -30,7 +30,7 @@ Tuz.getDog()
 
 class Duck extends Animal {
     constructor(name, type, color, pol  = "") {
-        super(name, type, color, pol)
+        super(name, type, color)
         this.pol = pol;
     }
 
@@ -46,7 +46,7 @@ Vas.getDuck()
 
 class Chipmunk extends Animal {
     constructor(name, type, color, food  = "") {
-        super(name, type, color, food)
+        super(name, type, color)
         this.food = food;
     }
 
